@@ -1,0 +1,282 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.javabeans:starter-parent:pom:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ io.javabeans:core-foundation:0.0.1-SNAPSHOT, /Users/rajagandharaw/Desktop/spring-migration/spring-migration-example/pom.xml, line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.javabeans:core-service:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ io.javabeans:core-foundation:0.0.1-SNAPSHOT, /Users/rajagandharaw/Desktop/spring-migration/spring-migration-example/pom.xml, line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.javabeans:core-foundation:pom:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] core-foundation                                                    [pom]
+[INFO] starter-parent                                                     [pom]
+[INFO] core-contract                                                      [jar]
+[INFO] core-service                                                       [jar]
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
+Progress (1): 2.8/8.1 kBProgress (1): 5.5/8.1 kBProgress (1): 8.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml (8.1 kB at 3.2 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/openrewrite/maven/rewrite-maven-plugin/maven-metadata.xml
+Progress (1): 2.8/5.7 kBProgress (1): 5.5/5.7 kBProgress (1): 5.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/openrewrite/maven/rewrite-maven-plugin/maven-metadata.xml (5.7 kB at 7.0 kB/s)
+[INFO] 
+[INFO] --------------------< io.javabeans:core-foundation >--------------------
+[INFO] Building core-foundation 0.0.1-SNAPSHOT                            [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite-maven-plugin:5.27.0:dryRun (default-cli) > process-test-classes @ core-foundation >>>
+[INFO] 
+[INFO] <<< rewrite-maven-plugin:5.27.0:dryRun (default-cli) < process-test-classes @ core-foundation <<<
+[INFO] 
+[INFO] 
+[INFO] --- rewrite-maven-plugin:5.27.0:dryRun (default-cli) @ core-foundation ---
+[INFO] REWRITE: Delaying execution to the end of multi-module project for io.javabeans:core-foundation:0.0.1-SNAPSHOT
+[INFO] 
+[INFO] --------------------< io.javabeans:starter-parent >---------------------
+[INFO] Building starter-parent 0.0.1-SNAPSHOT                             [2/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite-maven-plugin:5.27.0:dryRun (default-cli) > process-test-classes @ starter-parent >>>
+[INFO] 
+[INFO] <<< rewrite-maven-plugin:5.27.0:dryRun (default-cli) < process-test-classes @ starter-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- rewrite-maven-plugin:5.27.0:dryRun (default-cli) @ starter-parent ---
+[INFO] REWRITE: Delaying execution to the end of multi-module project for io.javabeans:starter-parent:0.0.1-SNAPSHOT
+[INFO] 
+[INFO] ---------------------< io.javabeans:core-contract >---------------------
+[INFO] Building core-contract 0.0.1-SNAPSHOT                              [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite-maven-plugin:5.27.0:dryRun (default-cli) > process-test-classes @ core-contract >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ core-contract ---
+[INFO] skip non existing resourceDirectory /Users/rajagandharaw/Desktop/spring-migration/spring-migration-example/core-contract/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/rajagandharaw/Desktop/spring-migration/spring-migration-example/core-contract/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ core-contract ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ core-contract ---
+[INFO] skip non existing resourceDirectory /Users/rajagandharaw/Desktop/spring-migration/spring-migration-example/core-contract/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ core-contract ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< rewrite-maven-plugin:5.27.0:dryRun (default-cli) < process-test-classes @ core-contract <<<
+[INFO] 
+[INFO] 
+[INFO] --- rewrite-maven-plugin:5.27.0:dryRun (default-cli) @ core-contract ---
+[INFO] REWRITE: Delaying execution to the end of multi-module project for io.javabeans:core-contract:0.0.1-SNAPSHOT
+[INFO] 
+[INFO] ---------------------< io.javabeans:core-service >----------------------
+[INFO] Building core-service 0.0.1-SNAPSHOT                               [4/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite-maven-plugin:5.27.0:dryRun (default-cli) > process-test-classes @ core-service >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ core-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/rajagandharaw/Desktop/spring-migration/spring-migration-example/core-service/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ core-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ core-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/rajagandharaw/Desktop/spring-migration/spring-migration-example/core-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ core-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< rewrite-maven-plugin:5.27.0:dryRun (default-cli) < process-test-classes @ core-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- rewrite-maven-plugin:5.27.0:dryRun (default-cli) @ core-service ---
+[INFO] Using active recipe(s) [org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2]
+[INFO] Using active styles(s) []
+Downloading from central: https://repo.maven.apache.org/maven2/org/openrewrite/recipe/rewrite-spring/maven-metadata.xml
+Progress (1): 2.8/2.9 kBProgress (1): 2.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/openrewrite/recipe/rewrite-spring/maven-metadata.xml (2.9 kB at 4.5 kB/s)
+[INFO] Validating active recipes...
+[INFO] Project [core-foundation] Resolving Poms...
+[WARNING] Unable to initialize RocksdbMavenPomCache, falling back to InMemoryMavenPomCache
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for core-foundation 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] core-foundation .................................... SUCCESS [  0.542 s]
+[INFO] starter-parent ..................................... SUCCESS [  0.015 s]
+[INFO] core-contract ...................................... SUCCESS [  0.131 s]
+[INFO] core-service ....................................... FAILURE [ 11.765 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.090 s
+[INFO] Finished at: 2024-04-01T12:11:06+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.openrewrite.maven:rewrite-maven-plugin:5.27.0:dryRun (default-cli) on project core-service: Execution default-cli of goal org.openrewrite.maven:rewrite-maven-plugin:5.27.0:dryRun failed: A required class was missing while executing org.openrewrite.maven:rewrite-maven-plugin:5.27.0:dryRun: org/jetbrains/kotlin/com/intellij/openapi/fileTypes/FileType
+[ERROR] -----------------------------------------------------
+[ERROR] realm =    plugin>org.openrewrite.maven:rewrite-maven-plugin:5.27.0
+[ERROR] strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
+[ERROR] urls[0] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/maven/rewrite-maven-plugin/5.27.0/rewrite-maven-plugin-5.27.0.jar
+[ERROR] urls[1] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-java/8.22.0/rewrite-java-8.22.0.jar
+[ERROR] urls[2] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-core/8.22.0/rewrite-core-8.22.0.jar
+[ERROR] urls[3] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/tools/jgit/1.0.0/jgit-1.0.0.jar
+[ERROR] urls[4] = file:/Users/rajagandharaw/.m2/repository/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13.jar
+[ERROR] urls[5] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.16.2/jackson-module-parameter-names-2.16.2.jar
+[ERROR] urls[6] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.2/jackson-datatype-jsr310-2.16.2.jar
+[ERROR] urls[7] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/tools/java-object-diff/1.0.1/java-object-diff-1.0.1.jar
+[ERROR] urls[8] = file:/Users/rajagandharaw/.m2/repository/io/quarkus/gizmo/gizmo/1.0.11.Final/gizmo-1.0.11.Final.jar
+[ERROR] urls[9] = file:/Users/rajagandharaw/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar
+[ERROR] urls[10] = file:/Users/rajagandharaw/.m2/repository/net/java/dev/jna/jna-platform/5.14.0/jna-platform-5.14.0.jar
+[ERROR] urls[11] = file:/Users/rajagandharaw/.m2/repository/net/java/dev/jna/jna/5.14.0/jna-5.14.0.jar
+[ERROR] urls[12] = file:/Users/rajagandharaw/.m2/repository/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar
+[ERROR] urls[13] = file:/Users/rajagandharaw/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar
+[ERROR] urls[14] = file:/Users/rajagandharaw/.m2/repository/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[ERROR] urls[15] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.2/jackson-annotations-2.16.2.jar
+[ERROR] urls[16] = file:/Users/rajagandharaw/.m2/repository/org/antlr/antlr4-runtime/4.11.1/antlr4-runtime-4.11.1.jar
+[ERROR] urls[17] = file:/Users/rajagandharaw/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar
+[ERROR] urls[18] = file:/Users/rajagandharaw/.m2/repository/io/github/classgraph/classgraph/4.8.168/classgraph-4.8.168.jar
+[ERROR] urls[19] = file:/Users/rajagandharaw/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.5/snappy-java-1.1.10.5.jar
+[ERROR] urls[20] = file:/Users/rajagandharaw/.m2/repository/io/github/fastfilter/fastfilter/1.0.2/fastfilter-1.0.2.jar
+[ERROR] urls[21] = file:/Users/rajagandharaw/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar
+[ERROR] urls[22] = file:/Users/rajagandharaw/.m2/repository/org/ow2/asm/asm-util/9.7/asm-util-9.7.jar
+[ERROR] urls[23] = file:/Users/rajagandharaw/.m2/repository/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar
+[ERROR] urls[24] = file:/Users/rajagandharaw/.m2/repository/org/ow2/asm/asm-analysis/9.7/asm-analysis-9.7.jar
+[ERROR] urls[25] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-java-8/8.22.0/rewrite-java-8-8.22.0.jar
+[ERROR] urls[26] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-java-11/8.22.0/rewrite-java-11-8.22.0.jar
+[ERROR] urls[27] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-java-17/8.22.0/rewrite-java-17-8.22.0.jar
+[ERROR] urls[28] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-xml/8.22.0/rewrite-xml-8.22.0.jar
+[ERROR] urls[29] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-maven/8.22.0/rewrite-maven-8.22.0.jar
+[ERROR] urls[30] = file:/Users/rajagandharaw/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar
+[ERROR] urls[31] = file:/Users/rajagandharaw/.m2/repository/org/checkerframework/checker-qual/3.19.0/checker-qual-3.19.0.jar
+[ERROR] urls[32] = file:/Users/rajagandharaw/.m2/repository/com/google/errorprone/error_prone_annotations/2.10.0/error_prone_annotations-2.10.0.jar
+[ERROR] urls[33] = file:/Users/rajagandharaw/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar
+[ERROR] urls[34] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.16.2/jackson-dataformat-xml-2.16.2.jar
+[ERROR] urls[35] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.2/jackson-core-2.16.2.jar
+[ERROR] urls[36] = file:/Users/rajagandharaw/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar
+[ERROR] urls[37] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.jar
+[ERROR] urls[38] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.16.2/jackson-dataformat-smile-2.16.2.jar
+[ERROR] urls[39] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.16.2/jackson-module-jaxb-annotations-2.16.2.jar
+[ERROR] urls[40] = file:/Users/rajagandharaw/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar
+[ERROR] urls[41] = file:/Users/rajagandharaw/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar
+[ERROR] urls[42] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.16.2/jackson-datatype-jdk8-2.16.2.jar
+[ERROR] urls[43] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-hcl/8.22.0/rewrite-hcl-8.22.0.jar
+[ERROR] urls[44] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-json/8.22.0/rewrite-json-8.22.0.jar
+[ERROR] urls[45] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-properties/8.22.0/rewrite-properties-8.22.0.jar
+[ERROR] urls[46] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-protobuf/8.22.0/rewrite-protobuf-8.22.0.jar
+[ERROR] urls[47] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-yaml/8.22.0/rewrite-yaml-8.22.0.jar
+[ERROR] urls[48] = file:/Users/rajagandharaw/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar
+[ERROR] urls[49] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-groovy/8.22.0/rewrite-groovy-8.22.0.jar
+[ERROR] urls[50] = file:/Users/rajagandharaw/.m2/repository/org/codehaus/groovy/groovy/3.0.21/groovy-3.0.21.jar
+[ERROR] urls[51] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-kotlin/1.13.0/rewrite-kotlin-1.13.0.jar
+[ERROR] urls[52] = file:/Users/rajagandharaw/.m2/repository/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.23/kotlin-compiler-embeddable-1.9.23.jar
+[ERROR] urls[53] = file:/Users/rajagandharaw/.m2/repository/org/jetbrains/kotlin/kotlin-script-runtime/1.9.23/kotlin-script-runtime-1.9.23.jar
+[ERROR] urls[54] = file:/Users/rajagandharaw/.m2/repository/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.23/kotlin-daemon-embeddable-1.9.23.jar
+[ERROR] urls[55] = file:/Users/rajagandharaw/.m2/repository/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330.jar
+[ERROR] urls[56] = file:/Users/rajagandharaw/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar
+[ERROR] urls[57] = file:/Users/rajagandharaw/.m2/repository/com/puppycrawl/tools/checkstyle/9.3/checkstyle-9.3.jar
+[ERROR] urls[58] = file:/Users/rajagandharaw/.m2/repository/info/picocli/picocli/4.6.2/picocli-4.6.2.jar
+[ERROR] urls[59] = file:/Users/rajagandharaw/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar
+[ERROR] urls[60] = file:/Users/rajagandharaw/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+[ERROR] urls[61] = file:/Users/rajagandharaw/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar
+[ERROR] urls[62] = file:/Users/rajagandharaw/.m2/repository/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar
+[ERROR] urls[63] = file:/Users/rajagandharaw/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
+[ERROR] urls[64] = file:/Users/rajagandharaw/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+[ERROR] urls[65] = file:/Users/rajagandharaw/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[ERROR] urls[66] = file:/Users/rajagandharaw/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar
+[ERROR] urls[67] = file:/Users/rajagandharaw/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar
+[ERROR] urls[68] = file:/Users/rajagandharaw/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar
+[ERROR] urls[69] = file:/Users/rajagandharaw/.m2/repository/net/sf/saxon/Saxon-HE/10.6/Saxon-HE-10.6.jar
+[ERROR] urls[70] = file:/Users/rajagandharaw/.m2/repository/org/codehaus/plexus/plexus-xml/4.0.3/plexus-xml-4.0.3.jar
+[ERROR] urls[71] = file:/Users/rajagandharaw/.m2/repository/org/apache/maven/maven-xml-impl/4.0.0-alpha-9/maven-xml-impl-4.0.0-alpha-9.jar
+[ERROR] urls[72] = file:/Users/rajagandharaw/.m2/repository/org/apache/maven/maven-api-xml/4.0.0-alpha-9/maven-api-xml-4.0.0-alpha-9.jar
+[ERROR] urls[73] = file:/Users/rajagandharaw/.m2/repository/org/apache/maven/maven-api-meta/4.0.0-alpha-9/maven-api-meta-4.0.0-alpha-9.jar
+[ERROR] urls[74] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/module/jackson-module-kotlin/2.16.2/jackson-module-kotlin-2.16.2.jar
+[ERROR] urls[75] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.2/jackson-databind-2.16.2.jar
+[ERROR] urls[76] = file:/Users/rajagandharaw/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.9.23/kotlin-reflect-1.9.23.jar
+[ERROR] urls[77] = file:/Users/rajagandharaw/.m2/repository/io/micrometer/prometheus/prometheus-rsocket-client/1.5.3/prometheus-rsocket-client-1.5.3.jar
+[ERROR] urls[78] = file:/Users/rajagandharaw/.m2/repository/io/micrometer/micrometer-registry-prometheus/1.9.16/micrometer-registry-prometheus-1.9.16.jar
+[ERROR] urls[79] = file:/Users/rajagandharaw/.m2/repository/io/prometheus/simpleclient_common/0.15.0/simpleclient_common-0.15.0.jar
+[ERROR] urls[80] = file:/Users/rajagandharaw/.m2/repository/io/prometheus/simpleclient/0.15.0/simpleclient-0.15.0.jar
+[ERROR] urls[81] = file:/Users/rajagandharaw/.m2/repository/io/prometheus/simpleclient_tracer_otel/0.15.0/simpleclient_tracer_otel-0.15.0.jar
+[ERROR] urls[82] = file:/Users/rajagandharaw/.m2/repository/io/prometheus/simpleclient_tracer_common/0.15.0/simpleclient_tracer_common-0.15.0.jar
+[ERROR] urls[83] = file:/Users/rajagandharaw/.m2/repository/io/prometheus/simpleclient_tracer_otel_agent/0.15.0/simpleclient_tracer_otel_agent-0.15.0.jar
+[ERROR] urls[84] = file:/Users/rajagandharaw/.m2/repository/io/micrometer/micrometer-core/1.12.3/micrometer-core-1.12.3.jar
+[ERROR] urls[85] = file:/Users/rajagandharaw/.m2/repository/io/micrometer/micrometer-commons/1.12.3/micrometer-commons-1.12.3.jar
+[ERROR] urls[86] = file:/Users/rajagandharaw/.m2/repository/io/micrometer/micrometer-observation/1.12.3/micrometer-observation-1.12.3.jar
+[ERROR] urls[87] = file:/Users/rajagandharaw/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar
+[ERROR] urls[88] = file:/Users/rajagandharaw/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar
+[ERROR] urls[89] = file:/Users/rajagandharaw/.m2/repository/io/rsocket/rsocket-transport-netty/1.1.4/rsocket-transport-netty-1.1.4.jar
+[ERROR] urls[90] = file:/Users/rajagandharaw/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.32/reactor-netty-core-1.0.32.jar
+[ERROR] urls[91] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-handler/4.1.107.Final/netty-handler-4.1.107.Final.jar
+[ERROR] urls[92] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-resolver/4.1.107.Final/netty-resolver-4.1.107.Final.jar
+[ERROR] urls[93] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-transport/4.1.107.Final/netty-transport-4.1.107.Final.jar
+[ERROR] urls[94] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.107.Final/netty-transport-native-unix-common-4.1.107.Final.jar
+[ERROR] urls[95] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-codec/4.1.107.Final/netty-codec-4.1.107.Final.jar
+[ERROR] urls[96] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-handler-proxy/4.1.107.Final/netty-handler-proxy-4.1.107.Final.jar
+[ERROR] urls[97] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-codec-socks/4.1.107.Final/netty-codec-socks-4.1.107.Final.jar
+[ERROR] urls[98] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-resolver-dns/4.1.107.Final/netty-resolver-dns-4.1.107.Final.jar
+[ERROR] urls[99] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-codec-dns/4.1.107.Final/netty-codec-dns-4.1.107.Final.jar
+[ERROR] urls[100] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.107.Final/netty-resolver-dns-native-macos-4.1.107.Final-osx-x86_64.jar
+[ERROR] urls[101] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.107.Final/netty-resolver-dns-classes-macos-4.1.107.Final.jar
+[ERROR] urls[102] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-transport-native-epoll/4.1.107.Final/netty-transport-native-epoll-4.1.107.Final-linux-x86_64.jar
+[ERROR] urls[103] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.107.Final/netty-transport-classes-epoll-4.1.107.Final.jar
+[ERROR] urls[104] = file:/Users/rajagandharaw/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.32/reactor-netty-http-1.0.32.jar
+[ERROR] urls[105] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-codec-http/4.1.107.Final/netty-codec-http-4.1.107.Final.jar
+[ERROR] urls[106] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-codec-http2/4.1.107.Final/netty-codec-http2-4.1.107.Final.jar
+[ERROR] urls[107] = file:/Users/rajagandharaw/.m2/repository/io/rsocket/rsocket-core/1.1.4/rsocket-core-1.1.4.jar
+[ERROR] urls[108] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-buffer/4.1.107.Final/netty-buffer-4.1.107.Final.jar
+[ERROR] urls[109] = file:/Users/rajagandharaw/.m2/repository/io/netty/netty-common/4.1.107.Final/netty-common-4.1.107.Final.jar
+[ERROR] urls[110] = file:/Users/rajagandharaw/.m2/repository/io/projectreactor/reactor-core/3.4.29/reactor-core-3.4.29.jar
+[ERROR] urls[111] = file:/Users/rajagandharaw/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar
+[ERROR] urls[112] = file:/Users/rajagandharaw/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar
+[ERROR] urls[113] = file:/Users/rajagandharaw/.m2/repository/org/rocksdb/rocksdbjni/8.8.1/rocksdbjni-8.8.1.jar
+[ERROR] urls[114] = file:/Users/rajagandharaw/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.3/plexus-interactivity-api-1.3.jar
+[ERROR] urls[115] = file:/Users/rajagandharaw/.m2/repository/org/apache/maven/shared/maven-filtering/3.3.2/maven-filtering-3.3.2.jar
+[ERROR] urls[116] = file:/Users/rajagandharaw/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar
+[ERROR] urls[117] = file:/Users/rajagandharaw/.m2/repository/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar
+[ERROR] urls[118] = file:/Users/rajagandharaw/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.27/plexus-interpolation-1.27.jar
+[ERROR] urls[119] = file:/Users/rajagandharaw/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar
+[ERROR] urls[120] = file:/Users/rajagandharaw/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar
+[ERROR] urls[121] = file:/Users/rajagandharaw/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar
+[ERROR] urls[122] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-openapi/0.0.4/rewrite-openapi-0.0.4.jar
+[ERROR] urls[123] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-static-analysis/1.4.2/rewrite-static-analysis-1.4.2.jar
+[ERROR] urls[124] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-spring/5.7.0/rewrite-spring-5.7.0.jar
+[ERROR] urls[125] = file:/Users/rajagandharaw/.m2/repository/org/testcontainers/testcontainers/1.19.7/testcontainers-1.19.7.jar
+[ERROR] urls[126] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/meta/rewrite-analysis/2.5.0/rewrite-analysis-2.5.0.jar
+[ERROR] urls[127] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-gradle/8.21.0/rewrite-gradle-8.21.0.jar
+[ERROR] urls[128] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-java-21/8.21.0/rewrite-java-21-8.21.0.jar
+[ERROR] urls[129] = file:/Users/rajagandharaw/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar
+[ERROR] urls[130] = file:/Users/rajagandharaw/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.6/docker-java-transport-zerodep-3.3.6.jar
+[ERROR] urls[131] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-migrate-java/2.11.0/rewrite-migrate-java-2.11.0.jar
+[ERROR] urls[132] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-java-dependencies/1.6.0/rewrite-java-dependencies-1.6.0.jar
+[ERROR] urls[133] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-testing-frameworks/2.6.0/rewrite-testing-frameworks-2.6.0.jar
+[ERROR] urls[134] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-hibernate/1.2.2/rewrite-hibernate-1.2.2.jar
+[ERROR] urls[135] = file:/Users/rajagandharaw/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-csv/2.16.1/jackson-dataformat-csv-2.16.1.jar
+[ERROR] urls[136] = file:/Users/rajagandharaw/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[ERROR] urls[137] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/recipe/rewrite-github-actions/2.1.7/rewrite-github-actions-2.1.7.jar
+[ERROR] urls[138] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/gradle/tooling/model/2.0.1/model-2.0.1.jar
+[ERROR] urls[139] = file:/Users/rajagandharaw/.m2/repository/org/openrewrite/rewrite-templating/1.6.3/rewrite-templating-1.6.3.jar
+[ERROR] urls[140] = file:/Users/rajagandharaw/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar
+[ERROR] urls[141] = file:/Users/rajagandharaw/.m2/repository/org/functionaljava/functionaljava/5.0/functionaljava-5.0.jar
+[ERROR] urls[142] = file:/Users/rajagandharaw/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+[ERROR] Number of foreign imports: 1
+[ERROR] import: Entry[import  from realm ClassRealm[maven.api, parent: null]]
+[ERROR] 
+[ERROR] -----------------------------------------------------
+[ERROR] : org.jetbrains.kotlin.com.intellij.openapi.fileTypes.FileType
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginContainerException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :core-service
